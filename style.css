@@ -1,8 +1,8 @@
 
 .shard {
   background-color: #7AE7DF;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   margin: 0 auto;
   transition: -webkit-clip-path 0.3s ease;
 }
