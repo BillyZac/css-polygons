@@ -1,3 +1,6 @@
+body {
+  height: 3000px;
+}
 
 .shard {
   background-color: #7AE7DF;
@@ -7,10 +10,10 @@
   transition: -webkit-clip-path 0.3s ease;
 }
 
-.state1 {
+/*.state1 {
   -webkit-clip-path: polygon(38.650% 66.000% ,40.750% 84.429% ,47.850% 70.000%);
 }
 
 .state2 {
   -webkit-clip-path: polygon(80% 90% ,40.750% 84.429% ,47.850% 70.000%);
-}
+}*/
