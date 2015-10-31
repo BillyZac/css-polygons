@@ -17,10 +17,19 @@ var t1 = new Triangle(p1, p2, p3);
 // var t2 = new Triangle(p4, p1, p5);
 
 // State 1
+// $('.shard').css('-webkit-clip-path', 'polygon('
+//   + t1.p1.x + '% ' + t1.p1.y + '% ,'
+//   + t1.p2.x + '% ' + t1.p2.y + '% ,'
+//   + t1.p3.x + '% ' + t1.p3.y + '%)')
+
+var drawShape = function(t) {
 $('.shard').css('-webkit-clip-path', 'polygon('
-  + t1.p1.x + '% ' + t1.p1.y + '% ,'
-  + t1.p2.x + '% ' + t1.p2.y + '% ,'
-  + t1.p3.x + '% ' + t1.p3.y + '%)')
+  + t.p1.x + '% ' + t.p1.y + '% ,'
+  + t.p2.x + '% ' + t.p2.y + '% ,'
+  + t.p3.x + '% ' + t.p3.y + '%)')
+}
+
+drawShape(t1)
 
 // Show state 2 when the window is scrolled
 $( window ).scroll(function() {
