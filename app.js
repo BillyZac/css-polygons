@@ -12,24 +12,22 @@ function Triangle(p1, p2, p3) {
 var p1 = new Point(10, 30);
 var p2 = new Point(70, 20);
 var p3 = new Point(50, 60);
+var p4 = new Point(40, 90);
+var p5 = new Point(10, 95);
 
 var t1 = new Triangle(p1, p2, p3);
-// var t2 = new Triangle(p4, p1, p5);
+var t2 = new Triangle(p4, p1, p5);
 
-// State 1
-// $('.shard').css('-webkit-clip-path', 'polygon('
-//   + t1.p1.x + '% ' + t1.p1.y + '% ,'
-//   + t1.p2.x + '% ' + t1.p2.y + '% ,'
-//   + t1.p3.x + '% ' + t1.p3.y + '%)')
-
-var drawShape = function(t) {
-$('.shard').css('-webkit-clip-path', 'polygon('
+// Takes class name of div (don't pass the dot) and clips it with triangle t
+var drawShape = function(div, t) {
+$('.' + div).css('-webkit-clip-path', 'polygon('
   + t.p1.x + '% ' + t.p1.y + '% ,'
   + t.p2.x + '% ' + t.p2.y + '% ,'
   + t.p3.x + '% ' + t.p3.y + '%)')
 }
 
-drawShape(t1)
+drawShape('shard', t1)
+
 
 // Show state 2 when the window is scrolled
 $( window ).scroll(function() {
