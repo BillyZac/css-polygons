@@ -2,12 +2,18 @@ body {
   height: 3000px;
 }
 
-.shard {
+.shard1, .shard2 {
   background-color: #7AE7DF;
+  opacity: .5;
   width: 600px;
   height: 600px;
+  position: absolute;
   margin: 0 auto;
   transition: -webkit-clip-path 0.3s ease;
+}
+
+.shard2 {
+  background-color: tomato;
 }
 
 /*.state1 {
